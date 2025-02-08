@@ -1,72 +1,50 @@
-# Sunrise Events Website
+# React + TypeScript + Vite
 
-A modern, responsive website for **Sunrise Events**, an event production company offering services like wedding decoration, reception setup, sangeet decoration, haldi decoration, and rental furniture. The website includes a gallery, contact form, booking calendar, and a call-to-action section to encourage users to get in touch for their event needs.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- **Navbar**: Navigation links to different sections (Services, Gallery, Contact, Booking).
-- **Services Section**: Lists all the services provided by Sunrise Events with descriptions.
-- **Gallery Section**: A dynamic carousel to showcase previous events and decor setups.
-- **Contact Section**: Includes contact details (phone, email, Instagram handle, and location) and a contact form.
-- **Booking Section**: Allows users to book consultations or event dates.
-- **Call-to-Action (CTA) Section**: A section to encourage users to contact the business.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Technologies Used
+## Expanding the ESLint configuration
 
-- **React**: Frontend framework for building the user interface.
-- **TypeScript**: Provides static type checking for React components.
-- **Bootstrap**: CSS framework for responsive and modern UI components.
-- **React Bootstrap**: React components built using Bootstrap styles.
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-### Prerequisites
+- Configure the top-level `parserOptions` property like this:
 
-Make sure you have the following installed:
-
-- **Node.js**: A JavaScript runtime to run the application.
-- **npm**: A package manager for installing dependencies.
-
-### Steps to Install
-
-1. Clone the repository to your local machine:
-
-   ```bash
-   git clone https://github.com/HimalRana2610/sunrise-events.git
-   cd sunrise-events
-
-2. Install the dependencies:
-
-   ```bash
-   npm install
-
-3. Run the development server:
-
-   ```bash
-   npm run dev
-
-4. Open your browser and visit http://localhost:3000 to view the website.
-
-### File Structure
-
-```pgsql
-sunrise-events/
-  ├── src/
-  │    ├── components/
-  │    │   ├── Navbar.tsx
-  │    │   ├── Services.tsx
-  │    │   ├── Gallery.tsx
-  │    │   ├── Contact.tsx
-  │    │   ├── Booking.tsx
-  │    │   ├── CTA.tsx
-  │    ├── App.tsx
-  │    ├── main.tsx
-  │    ├── index.css
-  ├── public/
-  │    ├── index.html
-  ├── package.json
-  ├── tsconfig.json
-  ├── README.md
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
 ```
 
-### Contribution
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-Feel free to fork the repository, create a branch, and submit a pull request with any improvements, features, or bug fixes.
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
+
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
+```
