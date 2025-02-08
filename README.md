@@ -47,24 +47,24 @@ Make sure you have the following installed:
 
 ### File Structure
 
-```pgsql
-sunrise-events/
-  ├── src/
-  │    ├── components/
-  │    │   ├── Navbar.tsx
-  │    │   ├── Services.tsx
-  │    │   ├── Gallery.tsx
-  │    │   ├── Contact.tsx
-  │    │   ├── Booking.tsx
-  │    │   ├── CTA.tsx
-  │    ├── App.tsx
-  │    ├── main.tsx
-  │    ├── index.css
-  ├── public/
-  │    ├── index.html
-  ├── package.json
-  ├── tsconfig.json
-  ├── README.md
+   ```pgsql
+   sunrise-events/
+     ├── src/
+     │    ├── components/
+     │    │   ├── Navbar.tsx
+     │    │   ├── Services.tsx
+     │    │   ├── Gallery.tsx
+     │    │   ├── Contact.tsx
+     │    │   ├── Booking.tsx
+     │    │   ├── CTA.tsx
+     │    ├── App.tsx
+     │    ├── main.tsx
+     │    ├── index.css
+     ├── public/
+     │    ├── index.html
+     ├── package.json
+     ├── tsconfig.json
+     ├── README.md
 
 ### Contribution
 
