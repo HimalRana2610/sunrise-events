@@ -32,3 +32,40 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/your-username/sunrise-events.git
    cd sunrise-events
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+
+4. Open your browser and visit http://localhost:3000 to view the website.
+
+### File Structure
+
+```pgsql
+sunrise-events/
+  ├── src/
+  │    ├── components/
+  │    │   ├── Navbar.tsx
+  │    │   ├── Services.tsx
+  │    │   ├── Gallery.tsx
+  │    │   ├── Contact.tsx
+  │    │   ├── Booking.tsx
+  │    │   ├── CTA.tsx
+  │    ├── App.tsx
+  │    ├── main.tsx
+  │    ├── index.css
+  ├── public/
+  │    ├── index.html
+  ├── package.json
+  ├── tsconfig.json
+  ├── README.md
+
+### Contribution
+
+Feel free to fork the repository, create a branch, and submit a pull request with any improvements, features, or bug fixes.
