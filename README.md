@@ -30,7 +30,7 @@ Make sure you have the following installed:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/sunrise-events.git
+   git clone https://github.com/HimalRana2610/sunrise-events.git
    cd sunrise-events
 
 2. Install the dependencies:
@@ -47,24 +47,25 @@ Make sure you have the following installed:
 
 ### File Structure
 
-   ```pgsql
-   sunrise-events/
-     ├── src/
-     │    ├── components/
-     │    │   ├── Navbar.tsx
-     │    │   ├── Services.tsx
-     │    │   ├── Gallery.tsx
-     │    │   ├── Contact.tsx
-     │    │   ├── Booking.tsx
-     │    │   ├── CTA.tsx
-     │    ├── App.tsx
-     │    ├── main.tsx
-     │    ├── index.css
-     ├── public/
-     │    ├── index.html
-     ├── package.json
-     ├── tsconfig.json
-     ├── README.md
+```pgsql
+sunrise-events/
+  ├── src/
+  │    ├── components/
+  │    │   ├── Navbar.tsx
+  │    │   ├── Services.tsx
+  │    │   ├── Gallery.tsx
+  │    │   ├── Contact.tsx
+  │    │   ├── Booking.tsx
+  │    │   ├── CTA.tsx
+  │    ├── App.tsx
+  │    ├── main.tsx
+  │    ├── index.css
+  ├── public/
+  │    ├── index.html
+  ├── package.json
+  ├── tsconfig.json
+  ├── README.md
+```
 
 ### Contribution
 
