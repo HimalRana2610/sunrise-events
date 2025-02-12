@@ -14,10 +14,10 @@ const NavbarComponent = () => {
         <Navbar.Toggle onClick={() => setShow(!show)} />
         <Navbar.Collapse in={show}>
           <Nav className="ms-auto" onClick={() => setShow(false)}>
-            <Nav.Link href="#gallery">Gallery</Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#booking">Booking</Nav.Link>
+            <Nav.Link href="#gallery" className="nav-link-custom">Gallery</Nav.Link>
+            <Nav.Link href="#services" className="nav-link-custom">Services</Nav.Link>
+            <Nav.Link href="#contact" className="nav-link-custom">Contact</Nav.Link>
+            <Nav.Link href="#booking" className="nav-link-custom">Booking</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

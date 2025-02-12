@@ -20,7 +20,7 @@
 
   #faqs .accordion-button {
     font-weight: bold;
-    background: #007bff;
+    background: rgb(221, 136, 207);
     color: white;
     padding: 12px;
     border-radius: 5px 5px 0 0;
