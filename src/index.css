@@ -150,13 +150,19 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: black; /* Change background color to black */
+  color: yellowgreen; /* Change font color to yellow-green */
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, transform 0.25s; /* Add transition for transform */
 }
+
 button:hover {
   border-color: #646cff;
+  transform: scale(1.1); /* Increase size on hover */
+  background-color: black; /* Ensure background color remains black on hover */
+  color: yellowgreen; /* Ensure font color remains yellow-green on hover */
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
