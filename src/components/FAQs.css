@@ -1,0 +1,44 @@
+  #faqs h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #faqs .accordion {
+    max-width: 800px;
+    margin: 0 auto; }
+  
+
+  #faqs .accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: white;
+  }
+  
+
+  #faqs .accordion-button {
+    font-weight: bold;
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  #faqs .accordion-button:hover {
+    background: #0056b3;
+  }
+  
+  
+  #faqs .accordion-button:not(.collapsed) {
+    background: #0056b3;
+  }
+  
+  #faqs .accordion-body {
+    background: #fff;
+    font-size: 16px;
+    color: #333;
+    padding: 15px;
+  }
+  
