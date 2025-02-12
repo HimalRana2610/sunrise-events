@@ -10,7 +10,7 @@ const Contact = () => {
         <Row>
           <Col md={6}>
             <h4>Phone</h4>
-            <p>+1 234 567 890</p>
+            <p>+91 9887829699</p>
             <h4>Email</h4>
             <p>info@sunrise-events.com</p>
             <h4>Instagram</h4>
