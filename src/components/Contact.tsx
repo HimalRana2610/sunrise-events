@@ -11,12 +11,13 @@ const Contact = () => {
           <Col md={6}>
             <h4>Phone</h4>
             <p>+91 9887829699</p>
-            <h4>Email</h4>
-            <p>info@sunrise-events.com</p>
+            <h4>Gmail</h4>
+            <p><a href="mailto:info@sunrise-events.com">info@sunrise-events.com</a></p>
             <h4>Instagram</h4>
-            <p>@sunriseevents</p>
+            <p><a href="https://www.instagram.com/sunriseevents.in?igsh=MTJuZXdoMnVvcGNxZw==">@sunriseevents</a></p>
             <h4>Location</h4>
-            <p>123 Event Street, City, Country</p>
+            <p>Sunrise Events <br /> Black Bunny Campus<br /> Beside High Field Ascot Mall Building<br /> VIP Road, opp. Palm Avenue<br />
+Surat, Gujarat - 395 007</p>
           </Col>
           <Col md={6}>
             <h4>Send Us a Message</h4>
