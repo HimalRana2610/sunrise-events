@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,13 +11,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
-#root{
+/* #root{
   width: 100%;
   padding:0;
   margin:0;
-}
+} */
 
 /* navbar */
 .shadow{
@@ -25,9 +25,9 @@
 }
 .brand-name{
   color: #f9f9f9;
-  font-family: Comfortaa,Arial, Helvetica, sans-serif;
+  font-family: Cinzel,Arial, Helvetica, sans-serif;
   font-size: x-large;
-  font-weight: 800;
+  font-weight: 600;
 }
 .nav-link-custom {
   font-family: Lexend Giga,Arial, Helvetica, sans-serif;
@@ -43,56 +43,14 @@
 
 
 /* gallery */
-.text-center{
-  font-family: Bona Nova SC,Arial, Helvetica, sans-serif;
-  color: rgb(75, 22, 76);
-
-}
-.gallery{
-  margin-top: 10px;
-  height: 90vh;
-  border: 8px solid rgb(75, 22, 76);
-  border-radius: 4px;
-}
-.gallery .carousel{
-  height: 80vh;
-}
-.gallery .carousel img {
-  height: 400px; 
-  object-fit: contain;
-  width: 100%; 
-  background-color: rgb(255, 255, 255); 
-}
-.gallery .carousel-control-prev-icon,
-.gallery .carousel-control-next-icon {
-  filter: invert(100%); 
-  background-color: rgba(0, 0, 0, 0.5); 
-  border-radius: 50%; 
-  padding: 10px;
-}
-
-.carousel-indicators {
-  border-radius: 90px;
-  position: absolute;
-  right: 0;
-  bottom: 15%;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-right: 15%;
-  margin-bottom: 1rem;
-  margin-left: 15%;
-  background-color: #a320bd28;
-}
 
 /* services */
 .card-title{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Lobster,'Courier New', Courier, monospace;
   position: absolute;
   top: 70%;
   font-weight: bolder;
+  color:#6d0077;
 }
 .card {
   padding: 0em;
@@ -113,6 +71,7 @@
   background-color: rgb(248, 231, 246); 
   padding: 60px 0; 
 }
+
 
 
 a {

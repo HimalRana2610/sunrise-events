@@ -1,7 +1,7 @@
 // src/components/Contact.tsx
 // import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-
+import './Contact.css'
 const Contact = () => {
   return (
     <section id="contact" className="py-5">
