@@ -10,10 +10,13 @@ const Services = () => {
         
         <Row className="justify-content-center mb-4">
           <Col md={6}>
-            <Card className='card'>
-              <Card.Body>
-                <Card.Title>Wedding Decoration</Card.Title>
-                <Card.Text>Elegant and beautiful wedding decorations for your special day.</Card.Text>
+            <Card className="card">
+              <Card.Body className="card-body">
+                <img src="" alt="" />
+                <Card.Title className='card-title'>Wedding Decoration</Card.Title>
+                <Card.Text className="card-text">
+                  Elegant and beautiful wedding decorations for your special day.
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
