@@ -1,28 +1,23 @@
-import { useState } from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from './logo.png'
-const NavbarComponent = () => {
-  const [show, setShow] = useState(false);
+import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import './Navbar.css';
 
+const NavigationBar = () => {
   return (
-    <Navbar className="shadow" expand="lg">
-      <Container>
-        <Navbar.Brand className="brand-name" href="#home">
-          <img src={logo}  height="40" className="me-2" />
-          Sunrise Events
-        </Navbar.Brand>
-        <Navbar.Toggle onClick={() => setShow(!show)} />
-        <Navbar.Collapse in={show}>
-          <Nav className="ms-auto" onClick={() => setShow(false)}>
-            <Nav.Link href="#gallery" className="nav-link-custom">Gallery</Nav.Link>
-            <Nav.Link href="#services" className="nav-link-custom">Services</Nav.Link>
-            <Nav.Link href="#contact" className="nav-link-custom">Contact</Nav.Link>
-            <Nav.Link href="#booking" className="nav-link-custom">Booking</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
+    <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
+      <Navbar.Brand href="#home">Sunrise Events</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="#services">Services</Nav.Link>
+          <Nav.Link href="#gallery">Gallery</Nav.Link>
+          <Nav.Link href="#contact">Contact</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 };
 
-export default NavbarComponent;
+export default NavigationBar;

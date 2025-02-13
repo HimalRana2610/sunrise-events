@@ -1,29 +1,19 @@
 // src/App.tsx
-// import React from 'react';
-import NavbarComponent from './components/Navbar';
-import Services from './components/Services';
+import React from 'react';
+import NavigationBar from './components/Navbar';
 import Gallery from './components/Gallery';
-import Contact from './components/Contact';
-import CTA from './components/CTA';
-import FAQ from './components/FAQs'
-import Testimonials from './components/Testimonials';
-import Booking from './components/BookingFormComponent'
-import './App.css'
-import './index.css'
-
+import Services from './components/Services';
+import './App.css';
 
 const App = () => {
   return (
     <div>
-      <NavbarComponent />
-      <Gallery />
-      <Services />
-      <Gallery />
-      <Booking/>
-      <FAQ/>
-      <Testimonials/>
-      <Contact />
-      <CTA />
+      <NavigationBar />
+      <div className="content">
+        <Services />
+        <Gallery />
+        {/* Add other components here */}
+      </div>
     </div>
   );
 };
