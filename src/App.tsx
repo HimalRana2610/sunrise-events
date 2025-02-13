@@ -15,8 +15,8 @@ const App = () => {
   return (
     <div>
       <NavbarComponent />
-      <Gallery />
       <Services />
+      <Gallery />
       <FAQ/>
       <Contact />
       <Booking />
