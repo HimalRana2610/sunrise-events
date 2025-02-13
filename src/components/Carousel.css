@@ -74,7 +74,7 @@
   padding: 10px 0;
 }
 
-/* Responsive styles */
+
 @media screen and (max-width: 768px) {
   .gallery {
     height: 70vh;
@@ -139,7 +139,6 @@
   }
 }
 
-/* Ensure images don't overflow on very small screens */
 @media screen and (max-width: 320px) {
   .gallery {
     height: 50vh;
@@ -154,7 +153,7 @@
   }
 }
 
-/* Handle landscape orientation on mobile */
+
 @media screen and (max-height: 500px) and (orientation: landscape) {
   .gallery {
     height: 100vh;

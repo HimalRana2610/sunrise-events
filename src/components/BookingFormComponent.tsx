@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './BookingForm.css';
 
 const BookingFormComponent = () => {
   const [formData, setFormData] = useState({
@@ -51,19 +52,62 @@ const BookingFormComponent = () => {
   };
 
   return (
-    <div>
+    <div className="booking-form-container">
       <h2>Book an Event</h2>
       <form onSubmit={handleSubmit}>
-        <input name="name" type="text" placeholder="Name" value={formData.name} onChange={handleChange} required />
-        <input name="contact" type="text" placeholder="Contact" value={formData.contact} onChange={handleChange} required />
-        <input name="eventType" type="text" placeholder="Event Type" value={formData.eventType} onChange={handleChange} required />
-        <input name="address" type="text" placeholder="Address" value={formData.address} onChange={handleChange} required />
-        <input name="eventDate" type="date" value={formData.eventDate} onChange={handleChange} required />
-        <textarea name="description" placeholder="Description" value={formData.description} onChange={handleChange}></textarea>
+        <input
+          name="name"
+          type="text"
+          placeholder="Name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="contact"
+          type="text"
+          placeholder="Contact"
+          value={formData.contact}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="eventType"
+          type="text"
+          placeholder="Event Type"
+          value={formData.eventType}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="address"
+          type="text"
+          placeholder="Address"
+          value={formData.address}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="eventDate"
+          type="date"
+          value={formData.eventDate}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="description"
+          placeholder="Description"
+          value={formData.description}
+          onChange={handleChange}
+        ></textarea>
         <button type="submit">Submit Booking</button>
       </form>
-
-      {statusMessage && <p>{statusMessage}</p>}
+      
+      {statusMessage && (
+        <p className={statusMessage.includes("successfully") ? "success-message" : "error-message"}>
+          {statusMessage}
+        </p>
+      )}
     </div>
   );
 };

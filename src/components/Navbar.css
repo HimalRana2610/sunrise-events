@@ -2,5 +2,27 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* Ensure it is above other elements */
+  z-index: 1000;
+}
+.shadow{
+  background-color:rgb(75, 22, 76);
+  width: 100vw;
+  max-width: 100vw;
+}
+.brand-name{
+  color: #f9f9f9;
+  font-family: Cinzel,Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: 600;
+}
+.nav-link-custom {
+  font-family: Lexend Giga,Arial, Helvetica, sans-serif;
+  color: #ffffff !important; /* Change text color */
+  font-weight: bold; /* Make text bold */
+  padding: 10px 15px; /* Adjust spacing */
+  transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.nav-link-custom:hover {
+  color: #f36bff !important; 
 }
