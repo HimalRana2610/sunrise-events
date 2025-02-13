@@ -2,6 +2,7 @@
 // import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
 import logo from './logo.png'
+import './Carousel.css'
 const Gallery = () => {
   return (
     <section className='gallery'>
