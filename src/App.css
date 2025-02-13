@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+  padding-top: 56px; /* Adjust padding to match navbar height */
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
