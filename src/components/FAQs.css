@@ -19,20 +19,22 @@
   
 
   #faqs .accordion-button {
+    font-size: large;
+    font-family: IBM Plex Sans Condensed Static;
     font-weight: bold;
-    background: #007bff;
+    background: rgb(221, 136, 207);
     color: white;
     padding: 12px;
     border-radius: 5px 5px 0 0;
   }
   
   #faqs .accordion-button:hover {
-    background: #0056b3;
+    background: rgb(75, 22, 76);
   }
   
   
   #faqs .accordion-button:not(.collapsed) {
-    background: #0056b3;
+    background: rgb(75, 22, 76);
   }
   
   #faqs .accordion-body {
