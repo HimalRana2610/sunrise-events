@@ -1,8 +1,11 @@
 // src/components/Gallery.tsx
-// import React from 'react';
+import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
-import logo from './logo.png'
-import './Carousel.css'
+import punyashBirthday from '../assets/Sunrise events/punyash-birthday.jpg';
+import event1 from '../assets/Sunrise events/Event1.jpg';
+import event2 from '../assets/Sunrise events/Event2.jpg';
+import './Carousel.css';
+
 const Gallery = () => {
   return (
     <section className='gallery'>
@@ -11,22 +14,22 @@ const Gallery = () => {
         <Carousel>
           <Carousel.Item>
             <img
-              className="d-block w-100"
-              src="https://via.placeholder.com/800x400?text=Event+1"
+              className="d-block w-100 carousel-image"
+              src={punyashBirthday}
               alt="Event 1"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
-              src={logo}
+              className="d-block w-100 carousel-image"
+              src={event1}
               alt="Event 2"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
-              src={logo}
+              className="d-block w-100 carousel-image"
+              src={event2}
               alt="Event 3"
             />
           </Carousel.Item>
