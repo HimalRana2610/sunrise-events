@@ -14,21 +14,21 @@ const Gallery = () => {
         <Carousel>
           <Carousel.Item>
             <img
-              className="d-block w-100"
+              className="d-block w-100 carousel-image"
               src={punyashBirthday}
               alt="Event 1"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
+              className="d-block w-100 carousel-image"
               src={event1}
               alt="Event 2"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
+              className="d-block w-100 carousel-image"
               src={event2}
               alt="Event 3"
             />
