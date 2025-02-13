@@ -3,6 +3,8 @@
   height: 90vh;
   border: 8px solid rgb(75, 22, 76);
   border-radius: 4px;
+  width: 100vw;
+  max-width: 100vw;
 }
 
 .text-center {
