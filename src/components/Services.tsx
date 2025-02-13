@@ -2,10 +2,11 @@ import { Card, Col, Row, Container } from 'react-bootstrap';
 import weddingImg from './logo.png';
 import receptionImg from './logo.png';
 import sangeetImg from './logo.png';
-import haldiImg from './logo.png';
+import haldiImg from './mehandi.png'; // Updated import
 import furnitureImg from './logo.png';
 import seatingImg from './logo.png';
 import './Services.css'
+import { FaMapMarkerAlt } from 'react-icons/fa'; // Import the map marker icon
 
 const Services = () => {
   return (
@@ -55,7 +56,7 @@ const Services = () => {
           <Col md={6}>
             <Card className="service-card">
               <div className="card-img-container">
-                <Card.Img variant="top" src={haldiImg} className="zoom-img full-img" />
+                <Card.Img variant="top" src={haldiImg} className="zoom-img full-img circular-img" /> {/* Updated image source */}
               </div>
               <Card.Body>
                 <Card.Title>Haldi Decoration</Card.Title>
@@ -87,6 +88,28 @@ const Services = () => {
                 <Card.Text>Comfortable and beautiful seating arrangements for your guests.</Card.Text>
               </Card.Body>
             </Card>
+          </Col>
+        </Row>
+
+        {/* New Section for Google Map */}
+        <Row className="justify-content-center mt-5">
+          <Col md={12} className="text-center">
+            <h3>Our Location</h3>
+            <div className="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086509474517!2d144.9630579153169!3d-37.81410797975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d8b1e4b0b1b!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1611810190847!5m2!1sen!2sau"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
+              <div className="map-icon">
+                <a href="https://www.google.com/maps?q=Federation+Square" target="_blank" rel="noopener noreferrer">
+                  <FaMapMarkerAlt size={40} color="red" />
+                </a>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
