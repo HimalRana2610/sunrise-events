@@ -4,6 +4,8 @@
     color: rgb(221, 136, 207);
     text-align: center;
     padding: 2rem 0;
+    width: 100vw;
+    max-width: 100vw;
   }
   
   .cta-heading {
