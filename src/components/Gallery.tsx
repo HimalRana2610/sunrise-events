@@ -1,5 +1,4 @@
 // src/components/Gallery.tsx
-import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
 import punyashBirthday from '../assets/Sunrise events/punyash-birthday.jpg';
 import event1 from '../assets/Sunrise events/Event1.jpg';
