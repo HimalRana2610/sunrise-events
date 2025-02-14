@@ -1,31 +1,47 @@
 // src/App.tsx
-import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationBar from './components/Navbar';
 import Gallery from './components/Gallery';
 import Services from './components/Services';
 import CTA from './components/CTA';
-import Testimonials  from './components/Testimonials';
+import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import FAQ from './components/FAQs';
 import BookingFormComponent from './components/BookingFormComponent';
+import AdminPage from './components/AdminPage';  // Import Admin Page
 import './App.css';
-import './index.css'
-import './components/Navbar.css'
+import './index.css';
+import './components/Navbar.css';
+
 const App = () => {
   return (
-    <div>
-      <NavigationBar />
+    <Router>
+      <div>
+        <NavigationBar />
         <div className="content">
-        <Gallery />
-        <Services />
-        <Testimonials />
-        <BookingFormComponent/>
-        <FAQ/>
-        <Contact/>
-        <CTA/>
-        
+          <Routes>
+            {/* Home Page Routes */}
+            <Route
+              path="/"
+              element={
+                <>
+                  <Gallery />
+                  <Services />
+                  <BookingFormComponent />
+                  <Testimonials />
+                  <FAQ />
+                  <Contact />
+                  <CTA />
+                </>
+              }
+            />
+
+            {/* Admin Page Route */}
+            <Route path="/admin" element={<AdminPage />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 };
 

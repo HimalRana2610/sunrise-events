@@ -52,7 +52,7 @@ const BookingFormComponent = () => {
   };
 
   return (
-    <div className="booking-form-container">
+    <div id="booking" className="booking-form-container">
       <h2>Book an Event</h2>
       <form onSubmit={handleSubmit}>
         <input

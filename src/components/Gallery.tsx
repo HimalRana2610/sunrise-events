@@ -1,5 +1,4 @@
 // src/components/Gallery.tsx
-import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
 import punyashBirthday from '../assets/Sunrise events/punyash-birthday.jpg';
 import event1 from '../assets/Sunrise events/Event1.jpg';
@@ -50,7 +49,7 @@ const images = [
 
 const Gallery = () => {
   return (
-    <section className='gallery'>
+    <section id="gallery" className='gallery'>
       <Container className='carousel'>
         <h2 className="text-center mb-4">Event Gallery</h2>
         <Carousel>

@@ -1,0 +1,17 @@
+.carousel-image {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image:hover {
+  transform: scale(1.05);
+}
+
+.carousel h2 {
+  color: #ff9800;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
