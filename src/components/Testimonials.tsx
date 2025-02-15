@@ -8,23 +8,23 @@ import './Testimonials.css';
 const testimonials = [
   {
     id: 1,
-    text: "The stunning decor exceeded my expectations. Highly recommended for elegant wedding decoration!",
-    author: "Priya Sharma",
+    text: "Empire Events is a fantastic service that offers top-notch event planning at a reasonable price. Their friendly representatives are always willing to go the extra mile to ensure that your event is perfect. I highly recommend Empire Events for anyone looking for a reliable and affordable event planning service.",
+    author: "Mr. Arun Patel",
   },
   {
     id: 2,
-    text: "As a corporate professional, I entrusted Eventplus for my product launch and conference management. Their seamless execution left a lasting impression.",
-    author: "Rahul Mehta",
+    text: "I recently used Empire Events for a party and had a great experience. The representative was really friendly and helpful. They responded immediately to my inquiries and their prices were very reasonable. I would definitely recommend them!",
+    author: "Gaurav Patel",
   },
   {
     id: 3,
-    text: "Sunrise Events transformed my birthday into a grand celebration. Amazing experience and wonderful service!",
-    author: "Aisha Khan",
+    text: "Empire Events delivers excellent services with well-trained professionals. Their expertise and attention to detail ensure a flawless event from start to finish. With Empire Events, you can trust that your special occasion is in capable hands.",
+    author: "Rajendra Kumar",
   },
   {
     id: 4,
-    text: "They provided excellent rental furniture and seating arrangements. Perfect for any event!",
-    author: "Vikram Singh",
+    text: "Nice decoration at sunrise event book with vasim Bhai ... wonderful decoration & nice behaviour team sunrise event",
+    author: "Divyesh",
   },
 ];
 

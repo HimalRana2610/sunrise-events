@@ -42,8 +42,8 @@ Surat, Gujarat - 395 007</p>
             <h3>Our Location</h3>
             <div className="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14677.719168715634!2d72.78690515!3d21.17024005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f7a5f9bfa6f%3A0x8fcb7f6a7d1a33ff!2sBlack%20Bunny%20Campus%2C%20Beside%20High%20Field%20Ascot%20Mall%20Building%2C%20VIP%20Road%2C%20opp.%20Palm%20Avenue%2C%20Surat%2C%20Gujarat%20-%20395%20007!5e0!3m2!1sen!2sin!4v1707894567890!5m2!1sen!2sin"
-                width="600"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.3005623175327!2d72.77040767430935!3d21.14043378393545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be05362b26e0b2b%3A0x184d69514dbd8923!2sSunrise%20Craft%20%26%20Decor!5e0!3m2!1sen!2sin!4v1739611777058!5m2!1sen!2sin"
+                width="100%"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen
@@ -51,7 +51,7 @@ Surat, Gujarat - 395 007</p>
               ></iframe>
               <div className="map-icon">
                 <a 
-                  href="https://www.google.com/maps?q=Black+Bunny+Campus,+Beside+High+Field+Ascot+Mall+Building,+VIP+Road,+opp.+Palm+Avenue,+Surat,+Gujarat+-+395007" 
+                  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.3005623175327!2d72.77040767430935!3d21.14043378393545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be05362b26e0b2b%3A0x184d69514dbd8923!2sSunrise%20Craft%20%26%20Decor!5e0!3m2!1sen!2sin!4v1739611777058!5m2!1sen!2sin" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
