@@ -7,14 +7,12 @@
     width: 100%; 
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    height: 80%;
+    height: 50vh;
 }
 .service-card:hover {
     transform: scale(1.05);
 }
-.card {
-    height: 50vh;
-}
+
 .card-img-container {
     overflow: hidden;
     border-radius: 10px;

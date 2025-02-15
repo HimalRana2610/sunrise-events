@@ -1,10 +1,10 @@
 import { Card, Col, Row, Container } from 'react-bootstrap';
-import weddingImg from './logo.png';
-import receptionImg from './logo.png';
-import sangeetImg from './logo.png';
+import weddingImg from './wedding.png';
+import receptionImg from './reception.png';
+import sangeetImg from './sangeet.png';
 import haldiImg from './mehandi.png';
-import furnitureImg from './logo.png';
-import seatingImg from './logo.png';
+import furnitureImg from './furniture.png';
+import seatingImg from './sitting.png';
 import './Services.css';
 
 const Services = () => {
