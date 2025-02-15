@@ -1,51 +1,50 @@
 #contact {
-    background: linear-gradient(135deg, rgb(221, 136, 207), rgb(245, 245, 245));
-    color: #333;
-    padding: 50px 0;
-    font-family: 'Poppins', sans-serif;
-    width: 100vw;
-    max-width: 100vw;
-  }
-  
-  h2, h4 {
-    color: #fff;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  p, input, textarea {
-    font-family: Marcellus,'Poppins', sans-serif;
-    font-weight: 300;
-  }
-  
-  p a {
-    color: #ffe;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  p a:hover {
-    color: #ffeb3b;
-    text-decoration: underline;
-  }
-  
-  form input, form textarea {
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    padding: 10px;
-  }
-  
-  form .btn-primary {
-    background: #ff4081;
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    font-family: Marcellus,'Poppins', sans-serif;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  form .btn-primary:hover {
-    background: #9d00ff;
-    transform: scale(1.05);
-  }
-  
+  background: linear-gradient(135deg, rgb(221, 136, 207), rgb(245, 245, 245));
+  color: #333;
+  padding: 50px 0;
+  font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+h2, h4 {
+  color: #fff;
+  font-weight: 600;
+  font-family: Bona Nova SC,'Poppins', sans-serif;
+}
+
+p, input, textarea {
+  font-family: Marcellus,'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+p a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+form input, form textarea {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+form .btn-primary {
+  background: #ff4081;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: Marcellus,'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+form .btn-primary:hover {
+  background: rgb(75, 22, 76);
+  transform: scale(1.05);
+}

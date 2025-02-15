@@ -1,24 +1,31 @@
 /* src/styles/CTA.css */
 .cta-section {
-    background-color: rgb(75, 22, 76);
-    color: rgb(221, 136, 207);
-    text-align: center;
-    padding: 2rem 0;
-    width: 100vw;
-    max-width: 100vw;
-  }
-  
-  .cta-heading {
-    color: rgb(221, 136, 207);
-  }
-  
-  .cta-text {
-    color: rgb(245, 245, 245);
-  }
-  
-  .cta-button {
-    background-color: rgb(221, 136, 207);
-    border-color: rgb(221, 136, 207);
-    color: rgb(245, 245, 245);
-  }
-  
+  background-color: rgb(75, 22, 76);
+  color: rgb(221, 136, 207);
+  text-align: center;
+  padding: 2rem 0;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+.cta-heading {
+  color: rgb(221, 136, 207);
+}
+
+.cta-text {
+  color: rgb(245, 245, 245);
+}
+
+.cta-button {
+  font-family: Marcellus,'Poppins', sans-serif;
+  background-color: rgb(221, 136, 207);
+  border-color: rgb(221, 136, 207);
+  color: rgb(245, 245, 245);
+}
+.cta-button:hover {
+  font-family: Marcellus,'Poppins', sans-serif;
+  background-color: rgb(221, 136, 207);
+  border-color: rgb(221, 136, 207);
+  color: rgb(245, 245, 245);
+  background-color: rgb(75, 22, 76);
+}

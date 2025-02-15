@@ -21,7 +21,7 @@ const Services = () => {
               </div>
               <Card.Body>
                 <Card.Title>Wedding Decoration</Card.Title>
-                <Card.Text>
+                <Card.Text className='textcard'>
                   Elegant and beautiful wedding decorations for your special day.
                 </Card.Text>
               </Card.Body>
@@ -34,7 +34,7 @@ const Services = () => {
               </div>
               <Card.Body>
                 <Card.Title>Reception Setup</Card.Title>
-                <Card.Text>Professional setup for your reception, tailored to your theme.</Card.Text>
+                <Card.Text className='textcard'>Professional setup for your reception, tailored to your theme.</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -48,18 +48,18 @@ const Services = () => {
               </div>
               <Card.Body>
                 <Card.Title>Sangeet Decoration</Card.Title>
-                <Card.Text>Colorful and festive decorations for your Sangeet ceremony.</Card.Text>
+                <Card.Text className='textcard'>Colorful and festive decorations for your Sangeet ceremony.</Card.Text>
               </Card.Body>
             </Card>
           </Col>
           <Col md={6}>
             <Card className="service-card">
               <div className="card-img-container">
-                <Card.Img variant="top" src={haldiImg} className="zoom-img full-img circular-img" />
+                <Card.Img variant="top" src={haldiImg} className="zoom-img full-img circular-img " />
               </div>
               <Card.Body>
                 <Card.Title>Haldi Decoration</Card.Title>
-                <Card.Text>Traditional Haldi ceremony decor to add to the spirit of the occasion.</Card.Text>
+                <Card.Text className='textcard'>Traditional Haldi ceremony decor to add to the spirit of the occasion.</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -73,7 +73,7 @@ const Services = () => {
               </div>
               <Card.Body>
                 <Card.Title>Rental Furniture</Card.Title>
-                <Card.Text>Rent stylish furniture and accessories for all types of events.</Card.Text>
+                <Card.Text className='textcard'>Rent stylish furniture and accessories for all types of events.</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -84,7 +84,7 @@ const Services = () => {
               </div>
               <Card.Body>
                 <Card.Title>Sitting Arrangements</Card.Title>
-                <Card.Text>Comfortable and beautiful seating arrangements for your guests.</Card.Text>
+                <Card.Text className='textcard'>Comfortable and beautiful seating arrangements for your guests.</Card.Text>
               </Card.Body>
             </Card>
           </Col>
