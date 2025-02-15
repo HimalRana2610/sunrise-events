@@ -17,13 +17,13 @@
 }
 
 .cta-button {
-  font-family: Marcellus,'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: rgb(221, 136, 207);
   border-color: rgb(221, 136, 207);
   color: rgb(245, 245, 245);
 }
 .cta-button:hover {
-  font-family: Marcellus,'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: rgb(221, 136, 207);
   border-color: rgb(221, 136, 207);
   color: rgb(245, 245, 245);

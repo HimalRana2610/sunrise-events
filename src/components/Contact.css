@@ -10,11 +10,11 @@
 h2, h4 {
   color: #fff;
   font-weight: 600;
-  font-family: Bona Nova SC,'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 p, input, textarea {
-  font-family: Marcellus,'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
 
@@ -40,7 +40,7 @@ form .btn-primary {
   border: none;
   padding: 10px 20px;
   font-weight: bold;
-  font-family: Marcellus,'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   transition: all 0.3s ease-in-out;
 }
 

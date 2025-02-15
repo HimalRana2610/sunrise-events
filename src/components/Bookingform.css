@@ -8,7 +8,7 @@
   }
   
   .booking-form-container h2 {
-    font-family: Bona Nova SC,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins", Bona Nova SC,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(75, 22, 76);
     margin-bottom: 1.5rem;
     text-align: center;
@@ -23,7 +23,7 @@
   
   .booking-form-container input,
   .booking-form-container textarea {
-    font-family: Cinzel,Arial, Helvetica, sans-serif;
+    font-family: "Poppins",Cinzel,Arial, Helvetica, sans-serif;
     padding: 0.8rem;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -44,7 +44,7 @@
   }
   
   .booking-form-container button {
-    font-family: Cinzel,Arial, Helvetica, sans-serif;
+    font-family: "Poppins",Cinzel,Arial, Helvetica, sans-serif;
     padding: 0.8rem;
     background-color: rgb(75, 22, 76);
     color: white;

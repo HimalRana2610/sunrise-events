@@ -11,12 +11,12 @@
 }
 .brand-name{
   color: #f9f9f9;
-  font-family: Cinzel,Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Cinzel,Arial, Helvetica, sans-serif;
   font-size: x-large;
   font-weight: 600;
 }
 .nav-link-custom {
-  font-family: Lexend Giga,Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Lexend Giga,Arial, Helvetica, sans-serif;
   color: #ffffff !important; /* Change text color */
   font-weight: bold; /* Make text bold */
   padding: 10px 15px; /* Adjust spacing */

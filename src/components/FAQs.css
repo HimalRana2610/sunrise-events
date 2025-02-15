@@ -23,7 +23,7 @@
 
   #faqs .accordion-button {
     font-size: large;
-    font-family: IBM Plex Sans Condensed Static;
+    font-family: "Poppins", IBM Plex Sans Condensed Static;
     font-weight: bold;
     background: rgb(221, 136, 207);
     color: white;

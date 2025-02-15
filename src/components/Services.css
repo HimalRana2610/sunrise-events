@@ -1,7 +1,7 @@
 .service-card {
     text-align: left;
     color: rgb(75, 22, 76);
-    font-family: Lobster;
+    font-family: "Poppins", serif;
     margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
     width: 100%; 
@@ -33,7 +33,7 @@
     transition: transform 0.5s ease-in-out;
 }
 .textcard{
-    font-family: Pacifico;
+    font-family: "Poppins", serif;
 }
 .card-img-container:hover .zoom-img {
     transform: scale(1.1);
