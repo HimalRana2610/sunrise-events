@@ -1,4 +1,3 @@
-// src/components/AdminPage.tsx
 import { useEffect, useState } from 'react';
 
 interface Booking {
@@ -10,28 +9,42 @@ interface Booking {
   description: string;
 }
 
+interface Contact {
+  name: string;
+  email: string;
+  message: string;
+}
+
 const AdminPage = () => {
   const [bookings, setBookings] = useState<Booking[]>([]);
+  const [contacts, setContacts] = useState<Contact[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchBookings = async () => {
+    const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/bookings');
-        const data = await response.json();
-        setBookings(data);
+        const [bookingsResponse, contactsResponse] = await Promise.all([
+          fetch('http://localhost:5000/api/bookings'),
+          fetch('http://localhost:5000/api/contacts'),
+        ]);
+
+        const bookingsData = await bookingsResponse.json();
+        const contactsData = await contactsResponse.json();
+
+        setBookings(bookingsData);
+        setContacts(contactsData);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching bookings:', error);
+        console.error('Error fetching data:', error);
         setLoading(false);
       }
     };
 
-    fetchBookings();
+    fetchData();
   }, []);
 
   if (loading) {
-    return <p>Loading bookings...</p>;
+    return <p>Loading data...</p>;
   }
 
   return (
@@ -60,6 +73,30 @@ const AdminPage = () => {
                 <td>{booking.address}</td>
                 <td>{booking.eventDate}</td>
                 <td>{booking.description}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+
+      <h2>Contact Form Submissions</h2>
+      {contacts.length === 0 ? (
+        <p>No contact messages yet.</p>
+      ) : (
+        <table className="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+            </tr>
+          </thead>
+          <tbody>
+            {contacts.map((contact, index) => (
+              <tr key={index}>
+                <td>{contact.name}</td>
+                <td>{contact.email}</td>
+                <td>{contact.message}</td>
               </tr>
             ))}
           </tbody>

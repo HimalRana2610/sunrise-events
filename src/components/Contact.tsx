@@ -1,9 +1,54 @@
 // src/components/Contact.tsx
 // import React from 'react';
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import "./Contact.css";
 const Contact = () => {
+  const [contactData, setContactData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [statusMessage, setStatusMessage] = useState<string | null>(null);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setContactData({
+      ...contactData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:5000/api/contacts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contactData),
+      });
+
+      if (response.ok) {
+        setStatusMessage("Contact form submitted successfully!");
+        setContactData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        setStatusMessage("Error submitting contact form.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setStatusMessage("Error submitting contact form.");
+    }
+  };
   return (
     <section id="contact" className="py-5">
       <Container>
@@ -35,32 +80,45 @@ const Contact = () => {
           </Col>
           <Col md={6}>
             <h4>Send Us a Message</h4>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <input
                   type="text"
+                  name="name"
                   className="form-control"
                   placeholder="Your Name"
+                  value={contactData.name}
+                  onChange={handleChange}
+                  required
                 />
               </div>
               <div className="mb-3">
                 <input
                   type="email"
+                  name="email"
                   className="form-control"
                   placeholder="Your Email"
+                  value={contactData.email}
+                  onChange={handleChange}
+                  required
                 />
               </div>
               <div className="mb-3">
                 <textarea
+                  name="message"
                   className="form-control"
                   placeholder="Your Message"
                   rows={4}
+                  value={contactData.message}
+                  onChange={handleChange}
+                  required
                 ></textarea>
               </div>
               <button type="submit" className="btn btn-primary">
                 Send Message
               </button>
             </form>
+            {statusMessage && <p>{statusMessage}</p>}
           </Col>
         </Row>
         <Row>
