@@ -12,6 +12,8 @@ import AdminPage from './components/AdminPage';  // Import Admin Page
 import './App.css';
 import './index.css';
 import './components/Navbar.css';
+import HeroSection from './components/Hero';
+
 
 const App = () => {
   return (
@@ -25,6 +27,7 @@ const App = () => {
               path="/"
               element={
                 <>
+                  <HeroSection/>
                   <Gallery />
                   <Services />
                   <BookingFormComponent />
@@ -32,6 +35,7 @@ const App = () => {
                   <FAQ />
                   <Contact />
                   <CTA />
+                  
                 </>
               }
             />

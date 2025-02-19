@@ -1,5 +1,6 @@
 
 .gallery {
+  width: 100vw;
   margin-top: 10px;
   height: 90vh;
   border: 8px solid rgb(75, 22, 76);
