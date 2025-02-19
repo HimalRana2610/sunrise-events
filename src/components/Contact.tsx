@@ -77,7 +77,7 @@ const Contact = () => {
               ></iframe>
               <div className="map-icon">
                 <a
-                  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.3005623175327!2d72.77040767430935!3d21.14043378393545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be05362b26e0b2b%3A0x184d69514dbd8923!2sSunrise%20Craft%20%26%20Decor!5e0!3m2!1sen!2sin!4v1739611777058!5m2!1sen!2sin"
+                  href="https://maps.app.goo.gl/rGLcDfNeZEZY8Dgt9"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
